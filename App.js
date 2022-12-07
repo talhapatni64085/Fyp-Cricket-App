@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Home from './src/screens/Home';
+import Grounds from './src/screens/Grounds';
+import Notification from './src/screens/Notification';
+import SignIn from './src/screens/SignIn';
+import SignUp from './src/screens/SignUp';
+import { MyStack } from './routes/homestack';
+import Profile from './src/screens/Profile';
+import Tournaments from './src/screens/Tournaments';
+import RLCA from './src/screens/RLCA';
+import PSL from './src/screens/PSL';
+import Test from './src/screens/test';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    
+    //  <MyStack>
+    //    <SignUp/>
+    //   </MyStack>
+    <RLCA/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
